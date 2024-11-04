@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="stats-container">
+            <div class="details">
+                <h1>To do app</h1>
+                <p>You've got this !</p>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stats-numbers">
+                <p id="numbers">0</p>
+            </div>
+        </div>
+        <form id="taskForm" action="">
+            <input id="taskInput" type="text" placeholder="What needs to be done ?">
+            <select id="priorityInput">
+                <option value="High">High</option>
+                <option value="Medium" selected>Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <button id="newTask" type="submit">+</button>
+        </form>
+        <div class="delete">
+            <button id="deleteComplete">Remove what's done !</button>
+            <button id="deleteAllButton">Delete All Tasks</button>
+        </div>
+        <ul id="task-list"></ul>
+  
+    </div>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
+

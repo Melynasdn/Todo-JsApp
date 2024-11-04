@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background: #2E073F;
+    --secondaryBackground: #451a5c;
+    --text: #ffffff;
+    --purple:#9c73b3;
+    --teal: #AD49E1;
+}
+
+body{
+    background: rgb(69,29,87);
+background: linear-gradient(90deg, rgba(69,29,87,1) 0%, rgba(136,49,124,1) 54%, rgba(67,30,154,1) 100%);
+    color: var(--text);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto 0 auto;
+    padding: 30px;
+    max-width: 500px;
+    border-radius: 20px;
+    background: rgba(46, 7, 63, 0.78);
+    border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(19.9px);
+-webkit-backdrop-filter: blur(19.9px);
+border: 1px solid rgba(46, 7, 63, 0.32);
+}
+
+
+.stats-container{
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid var(--purple);
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    
+
+}
+.details{
+    width: 100%;
+}
+#progressBar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--secondaryBackground);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#progress{
+
+    height: 10px;
+    background-color: var(--teal);
+    border-radius: 10px;
+    transition: all 0.3s ease ;
+}
+#numbers{
+    width: 100px;
+    height: 100px;
+    background-color: var(--purple);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bold;
+}
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+input{
+    flex: 1;
+    padding: 16px ;
+    background-color: var(--secondaryBackground);
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    outline: 0;
+    color: white;
+}
+
+#newTask{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple);
+    color: var(--text);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    outline-style: none;
+    cursor: pointer;
+}
+
+#deleteComplete, #deleteAllButton{
+    background-color: var(--secondaryBackground);
+    border-radius: 8px;
+    height: 40px;
+    padding: 8px;
+    margin-top: 10px;
+    margin: 12px 6px;
+    cursor: pointer;
+    color: #ffffff;
+    border: 1px solid var(--purple);
+}
+
+#task-list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+}
+
+.taskItem{
+    width: 100%;
+    display: flex;
+    background-color: var(--secondaryBackground);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.taskItem img{
+   width: 24px;
+   height: 24px;
+   margin-right: 15px;
+   cursor: pointer;
+}
+.task{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+.task input{
+  width:24px ;
+  height: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.task.completed{
+  text-decoration:line-through ;
+  color: var(--text);
+}
+
+
+#priorityInput{
+    background-color: #451a5c;
+    color: white;
+    border-radius: 8px;
+    width: 20%;
+    cursor: pointer;
+}
+.delete{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
